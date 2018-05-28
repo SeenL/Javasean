@@ -11,8 +11,8 @@ var api = require('marvel-api')
 
 }
 
- /* getFirst100() {
-  this.marvel.characters.findAll(100)
+  getFirst100() {
+  this.marvel.characters.findAll(5)
    .then(function(res) {
    for (var index = 0; index < res.data.length; index++) {
    console.log((index + 1) + ' ' + res.data[index].name)
@@ -24,7 +24,7 @@ var api = require('marvel-api')
    
 }
 
-*/ 
+ 
  
  getSpiderman(){
  this.marvel.characters.findByName('spider-man')
