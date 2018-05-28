@@ -1,0 +1,15 @@
+#!/usr/bin/env node 
+ var program = require('commander')
+ var colors = require('colors')
+ var Marvel = require('./marvel.js')
+
+ program
+  .version('0.1.0')
+  .option('-f, --f100', 'Give me first 100 marvel characters')
+  .parse(process.argv);
+
+  if (program.f100) {
+   
+
+   marvel.getFirst100() 
+} 
