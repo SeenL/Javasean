@@ -5,11 +5,17 @@
 
  program
   .version('0.1.0')
-  .option('-f, --f100', 'Give me first 100 marvel characters')
+  .option('-f, --first100', 'Give me first 100 marvel characters')
   .parse(process.argv);
 
-  if (program.f100) {
+  if (program.first100) {
    
-
+   var marvel = new Marvel({
+   publicKey : 'd4d99791cfab71966cc8545ad4fbc6d2',
+   privateKey : 'ccfe3ec34335993e9d48dcc47901e80ee7362536' })
    marvel.getFirst100() 
-} 
+}
+
+ /*  publicKey : 'd4d99791cfab71966cc8545ad4fbc6d2',
+   privateKey : 'ccfe3ec34335993e9d48dcc47901e80ee7362536'
+  */
