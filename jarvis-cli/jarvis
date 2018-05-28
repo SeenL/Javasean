@@ -13,7 +13,7 @@
    var marvel = new Marvel({
    publicKey : 'd4d99791cfab71966cc8545ad4fbc6d2',
    privateKey : 'ccfe3ec34335993e9d48dcc47901e80ee7362536' })
-   marvel.getFirst100() 
+   marvel.getVision() 
 }
 
  /*  publicKey : 'd4d99791cfab71966cc8545ad4fbc6d2',
