@@ -1,20 +1,36 @@
 #!/usr/bin/env node 
  var program = require('commander')
- var colors = require('colors')
- var Marvel = require('./marvel.js')
+ var Avengers = require('./avengers')
 
  program
   .version('0.1.0')
-  .option('-f, --first100', 'Give me first 100 marvel characters')
+  .option('-ga, --getAvengers', 'Get Avengers')
+  .option('-gs, --getSpiderman', 'Get Spiderman')
   .parse(process.argv);
 
-  if (program.first100) {
-   
-   var marvel = new Marvel({
-   publicKey : 'd4d99791cfab71966cc8545ad4fbc6d2',
-   privateKey : 'ccfe3ec34335993e9d48dcc47901e80ee7362536' })
-   marvel.getFirst100() 
+ if (program.getSpiderman) {
+   var spiderman = new Avengers({
+    publicKey : 'd4d99791cfab71966cc8545ad4fbc6d2',
+   privateKey : 'ccfe3ec34335993e9d48dcc47901e80ee7362536'
+ 
+ 
+})
+
+ spiderman.getSpiderMan()
 }
+
+  if (program.getAvengers) {
+     var avengers = new Avengers({
+     publicKey : 'd4d99791cfab71966cc8545ad4fbc6d2',
+     privateKey : 'ccfe3ec34335993e9d48dcc47901e80ee7362536'
+ })
+
+   avengers.assemble(function(avengers){
+    console.log(avengers)
+ })    
+}
+
+
 
  /*  publicKey : 'd4d99791cfab71966cc8545ad4fbc6d2',
    privateKey : 'ccfe3ec34335993e9d48dcc47901e80ee7362536'
