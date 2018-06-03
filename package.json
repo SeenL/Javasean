@@ -1,0 +1,19 @@
+{
+  "name": "sean_modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeenL/Javasean.git"
+  },
+  "author": "slattadev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SeenL/Javasean/issues"
+  },
+  "homepage": "https://github.com/SeenL/Javasean#readme"
+}
