@@ -10,7 +10,6 @@
   },
   "author": "slattadev",
   "license": "MIT",
-  "description": "",
   "dependencies": {
     "express": "^4.16.3"
   },
